@@ -1,10 +1,7 @@
 const express = require('express');
+
 const app = express();
+const productsRoutes = require('./src/routes/products');
 
-app.use(() => {
-    console.log('Middleware executed');
-    console.log('Middleware executed');
-    console.log('asdfak;djf;akjfa;sd');
-})
+app.use('/', productsRoutes);
 app.listen(3000);
-
