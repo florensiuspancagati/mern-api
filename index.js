@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const productsRoutes = require('./src/routes/products');
+const authRoutes = require('./src/routes/auth');
 
 app.use(bodyParser.json());
 
@@ -13,5 +14,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/', productsRoutes);
+app.use('/v1/customer', productsRoutes);
+app.use('/v1/auth', authRoutes);
 app.listen(3000);
