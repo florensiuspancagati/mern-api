@@ -1,0 +1,55 @@
+Standar API (REST)
+
+{root.api}/{version}/{grouping}/{endpoint}
+SAMPLE:
+http://mern-api.pancacoding.com/v1/auth/login
+
+Standar Status response
+200 - OK
+201 - CREATED
+400 - BAD REQUEST
+401 - UNAUTHORIZED
+403 - FORBIDDEN
+404 - NOT FOUND
+500 - INTERNAL SERVER ERROR
+502 - BAD GATEWAY
+
+GROUP: Authentication
+[1] - Register
+{root.api}/{version}/auth/Register
+
+req:
+{
+    "name": "name",
+    "email": "email",
+    "password": "password"
+}
+
+res:
+{
+    "message": "message",
+    "data":
+    {
+        "id": id,
+        "name": "name",
+        "email": "email",
+        "password": "password"
+    }
+}
+
+err-response:
+400 -> Invalid Input.
+
+[2] - Login
+{root.api}/{version}/auth/login
+
+req:
+{
+    ...
+}
+
+GROUP: Blog
+[1] - Create (POST) Blog Post
+[2] - Read (GET) Blog Post
+[3] - Update (PATCH) Blog Post
+[4] - Delete (DELETE) Blog POST
