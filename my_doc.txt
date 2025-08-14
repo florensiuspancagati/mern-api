@@ -1,0 +1,14 @@
+1. file index.js
+    merupakan entry point utama dalam project aplikasi express ini.
+    fungsinya membuat instance, mengatur middleware, menghubungkan route handler, dan menjalankan server.
+
+2. folder routes
+    file" pada folder ini mendefinisikan endpoint/route untuk API project ini.
+    fungsinya mengatur URL dan menghubungkannya ke controller yang sesuai.
+
+3. folder controller
+    file" pada folder ini adalah fungsi handler untuk setiap endpoint.
+    fungsinya menangani logika bisnis ketika endpoint di akses.
+
+4. folder models
+    file" pada folder ini adalah definisi struktur data/database dan fungsi untuk interaksi dengan database.
