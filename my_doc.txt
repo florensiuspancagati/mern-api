@@ -1,3 +1,17 @@
+1. pertama reactjs dulu
+	a. pertama bini folder projek
+	b. lalu kita install reactjs (saya pakai vite) harus ada nodejs dulu
+	c. masuk ke folder reactjs kita (mern-ftree)
+	d. lalu nmp install dulu (karna mau install yang belum ada, contohnya vite)
+	e. lalu npm run dev (untuk running)
+
+2. nodejs, express, dll.
+	a. buat folder dengan nama sesuai projek yang kita mau (mkdir folder_name)
+	b. masuk ke folder itu di terminal (cd folder_name)
+	c. inisialisasi projek nodejs (npm init) selanjutnya pande pande lah
+	d. install package express (npm install express, pande pande lah)
+	e. tambah file .gitignore, pande pande lah
+
 1. file index.js
     merupakan entry point utama dalam project aplikasi express ini.
     fungsinya membuat instance, mengatur middleware, menghubungkan route handler, dan menjalankan server.
@@ -12,3 +26,12 @@
 
 4. folder models
     file" pada folder ini adalah definisi struktur data/database dan fungsi untuk interaksi dengan database.
+
+Add express-validator untuk melakukan validasi input.
+Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya, proyek ini menggunakan
+    MongoDB melalui server mongodb.
+    berikut ini setup nya:
+    a. buat proyek baru pada server mongodb
+    b. buat cluster baru, pakai yang free
+    c. buat user untuk akses database
+    d. ke network access untuk buat IP whitelist
