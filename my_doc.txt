@@ -35,3 +35,4 @@ Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya
     b. buat cluster baru, pakai yang free
     c. buat user untuk akses database
     d. ke network access untuk buat IP whitelist
+	e. setelah melakukan langkah-langkah tersebut, baru bisa diakses dari local
