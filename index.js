@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const app = express();
 const authRoutes = require('./src/routes/auth');
@@ -25,4 +26,8 @@ app.use((error, req, res, next) => {
     res.status(status).json({message: message, data: data});
 });
 
-app.listen(3000);
+mongoose.connect('mongodb+srv://panca:mern-api-mongodb-key@cluster0.d7zjvdt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+    .then(() => {
+        app.listen(3000, () => console.log('Server is running on port 3000'));
+    })
+    .catch(err => console.log(err));
