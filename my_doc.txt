@@ -28,6 +28,7 @@
     file" pada folder ini adalah definisi struktur data/database dan fungsi untuk interaksi dengan database.
 
 Add express-validator untuk melakukan validasi input.
+
 Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya, proyek ini menggunakan
     MongoDB melalui server mongodb.
     berikut ini setup nya:
@@ -36,3 +37,9 @@ Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya
     c. buat user untuk akses database
     d. ke network access untuk buat IP whitelist
 	e. setelah melakukan langkah-langkah tersebut, baru bisa diakses dari local
+
+    sekarang cara connect nya:
+    a. klik connect di atlas
+    b. pilih driver, pandai pandai lah
+    c. jangan lupa install mongoose, habis tu import di index.js
+    d. lalu bikin query nya, salin url nya, ada di atlas, aman aja
