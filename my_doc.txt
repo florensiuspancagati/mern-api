@@ -43,3 +43,8 @@ Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya
     b. pilih driver, pandai pandai lah
     c. jangan lupa install mongoose, habis tu import di index.js
     d. lalu bikin query nya, salin url nya, ada di atlas, aman aja
+
+    cara membuat model:
+    a. pada file model, import mongoose dan schema
+    b. lalu membuat model seperti biasa
+    c. jangan lupa export (module.export)
