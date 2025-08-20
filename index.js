@@ -26,7 +26,7 @@ app.use((error, req, res, next) => {
     res.status(status).json({message: message, data: data});
 });
 
-mongoose.connect('mongodb+srv://panca:mern-api-mongodb-key@cluster0.d7zjvdt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://panca:mern-api-mongodb-key@cluster0.d7zjvdt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {dbName: 'mern-api'})
     .then(() => {
         app.listen(3000, () => console.log('Server is running on port 3000'));
     })
