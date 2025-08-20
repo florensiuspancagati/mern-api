@@ -10,4 +10,7 @@ router.post('/post',
         body('body').isLength({min: 5}).withMessage('Body must be at least 5 characters long')],
     blogController.createBlogPost);
 
+// [get]: /v1/blog/posts
+router.get('/posts', blogController.getAllBlogPosts);
+
 module.exports = router;

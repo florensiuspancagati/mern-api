@@ -37,3 +37,16 @@ exports.createBlogPost = (req, res, next) => {
     })
     .catch(err => {err});
 }
+
+exports.getAllBlogPosts = (req, res, next) => {
+    BlogPost.find()
+    .then(result => {
+        res.status(200).json({
+            message: 'Fetched all blog post successfully',
+            data: result
+        });
+    })
+    .catch(err => {
+        next(err);
+    });
+}

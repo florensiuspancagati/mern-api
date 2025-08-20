@@ -58,4 +58,7 @@ cara untuk upload gambar:
     f. pada controller, kita bikin pengecekan agar image tidak kosong
     g. lalu tambahkan image pada const Posting
     h. pada model jangan lupa tambahkan image, type nya string, karna cuma simpan url
-    
+
+untuk memanggil data dari db:
+    a. buat controller getAllBlogPost
+    b. tambahkan routes ke getAllBlogPost, and done
