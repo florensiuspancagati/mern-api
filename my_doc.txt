@@ -48,3 +48,14 @@ Proyek menggunakan database MongoDB, namun beda dari proyek saya yang sebelumnya
     a. pada file model, import mongoose dan schema
     b. lalu membuat model seperti biasa
     c. jangan lupa export (module.export)
+
+cara untuk upload gambar:
+    a. npm install multer, untuk middelware nya
+    b. di index.js kita import multer
+    c. bikin fileStoreage (untuk lokasi filenya)
+    d. bikin fileFilter (untuk filter input user)
+    e. bikin middlewarenyaaa...
+    f. pada controller, kita bikin pengecekan agar image tidak kosong
+    g. lalu tambahkan image pada const Posting
+    h. pada model jangan lupa tambahkan image, type nya string, karna cuma simpan url
+    
