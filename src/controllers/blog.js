@@ -46,7 +46,22 @@ exports.getAllBlogPosts = (req, res, next) => {
             data: result
         });
     })
-    .catch(err => {
-        next(err);
-    });
+    .catch(err => { next(err);});
+}
+
+exports.getBlogPostById = (req, res, next) => {
+    const postId = req.params.postId;
+    BlogPost.findById(postId)
+    .then(result => {
+        if(!result) {
+            const err = new Error('Could not find blog post.');
+            err.errorStatus = 404;
+            throw err;
+        }
+        res.status(200).json({
+            message: 'Fetched blog post successfully',
+            data: result
+        });
+    })
+    .catch(err => { next(err); });
 }
