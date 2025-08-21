@@ -1,4 +1,6 @@
 const { validationResult } = require('express-validator');
+const path = require('path');
+const fs = require('fs');
 const BlogPost = require('../models/blog');
 
 exports.createBlogPost = (req, res, next) => {
@@ -108,4 +110,33 @@ exports.updateBlogPost = (req, res, next) => {
         });
     })
     .catch(err => { next(err); });
+}
+
+// Function to remove image file from the server
+const removeImage = (filePath)  => {
+    filePath = path.join(__dirname, '../..', filePath);
+    fs.unlink(filePath, err => console.log(err));
+}
+
+exports.deleteBlogPost = (req, res, next) => {
+    const postId = req.params.postId;
+
+    BlogPost.findById(postId)
+    .then(post => {
+        if(!post) {
+            const err = new Error('Could not find blog post.');
+            err.errorStatus = 404;
+            throw err;
+        }
+
+        removeImage(post.image);
+        return BlogPost.findByIdAndDelete(postId);
+    })
+    .then(result => {
+        res.status(200).json({
+            message: 'Blog post deleted successfully',
+            data: result
+        });
+    })
+    .catch( err => { next(err); });
 }
