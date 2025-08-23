@@ -62,3 +62,12 @@ cara untuk upload gambar:
 untuk memanggil data dari db:
     a. buat controller getAllBlogPost
     b. tambahkan routes ke getAllBlogPost, and done
+
+untuk memanggil data dari db dengan id:
+	a. pada endpoint tambahkan parameter untuk menangkap id
+	b. gunakan fungsi findById
+
+untuk hapus data:
+	a. gunakan method delete
+	b. hapus file dulu (foto)
+	c. baru hapus data (findByIdAndDelete)
