@@ -71,3 +71,6 @@ untuk hapus data:
 	a. gunakan method delete
 	b. hapus file dulu (foto)
 	c. baru hapus data (findByIdAndDelete)
+
+menghubungkan frontend dengan backend:
+	a. fetch dengan axio, install
