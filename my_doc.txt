@@ -74,3 +74,4 @@ untuk hapus data:
 
 menghubungkan frontend dengan backend:
 	a. fetch dengan axio, install
+    b. npm install axios
