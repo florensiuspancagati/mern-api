@@ -75,3 +75,4 @@ untuk hapus data:
 menghubungkan frontend dengan backend:
 	a. fetch dengan axio, install
     b. npm install axios
+    c. pada project mern-blog, juga install axios, kemudian panggil api dengan fungsi useEffect juga Axios
