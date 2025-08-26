@@ -76,3 +76,11 @@ menghubungkan frontend dengan backend:
 	a. fetch dengan axio, install
     b. npm install axios
     c. pada project mern-blog, juga install axios, kemudian panggil api dengan fungsi useEffect juga Axios
+
+redux, reac-redux:
+    a. disarankan pake yang terbaru npm install @reduxjs/toolkit
+    b. yang perlu di edit di meri-blog:
+        1. config->redux->store.jsx
+        2. config->index.jsx
+        3. pages->home->index.jsx
+        4. pages->App.jsx
