@@ -84,3 +84,6 @@ redux, reac-redux:
         2. config->index.jsx
         3. pages->home->index.jsx
         4. pages->App.jsx
+
+kemudian membuat state global, lalu menggunakan redux thunk agar bisa menggunakan state global
+kemudian menambahkan pagination dinamis
