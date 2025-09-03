@@ -87,3 +87,4 @@ redux, reac-redux:
 
 kemudian membuat state global, lalu menggunakan redux thunk agar bisa menggunakan state global
 kemudian menambahkan pagination dinamis
+langkah selanjutnya, menambahkan algoritma membuat postingan baru dan upload image
